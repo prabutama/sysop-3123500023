@@ -39,41 +39,53 @@ Apa itu booting di OS? Di bagian ini, kita akan mendefinisikan booting di sistem
 
 Setelah pemeriksaan perangkat keras selesai, proses booting sistem operasi dimulai. Sistem operasi dimuat, memungkinkan komputer berfungsi dengan baik dan menerima perintah pengguna.Proses booting di OS sangat penting untuk pengoperasian komputer yang memadai dan pelaksanaan berbagai aplikasi perangkat lunak.
 
-Untuk langkah langkah dari proses booting sistem operasi bisa di lihat di bawah ini:
+## Jenis Proses Booting
 
-1. Power On
+### 1. Cold Booting
+Menyalakan komputer untuk pertama kalinya atau setelah komputer dimatikan sepenuhnya. Saat kita menekan tombol daya untuk memulai cold boot, komputer membaca instruksi Basic Input/Output System (BIOS) yang disimpan di ROM. Instruksi ini memandu sistem dalam memuat sistem operasi ke dalam memori utama. Dibandingkan dengan Warm booting, booting dingin membutuhkan waktu lebih lama karena melibatkan startup sistem yang lengkap.
 
-Saat tombol power atau tombol *reset *dihidupkan, sumber daya listrik
-akan mengalir ke komputer. Kemudian, perangkat keras akan menerima daya
-untuk dinyalakan.
+### 2. Warm Booting
+Warm boot, atau reboot, terjadi saat komputer dihidupkan ulang saat dihidupkan. Jenis booting ini biasanya dilakukan ketika sistem hang atau menjadi tidak responsif. Warm booting dapat dimulai melalui perangkat keras, seperti menekan tombol reset, atau perintah perangkat lunak, seperti Ctrl+Alt+Del. Seringkali perlu melakukan boot hangat setelah menginstal perangkat lunak atau perangkat keras baru untuk menerapkan perubahan konfigurasi dan memastikan fungsionalitas sistem yang tepat.
 
-2.  Power-On Self Test (POST)
+#### * Untuk langkah langkah dari proses booting sistem operasi bisa di lihat di bawah ini:
 
-Setelah dinyalakan, komputer akan melakukan *Power-On Self-Test *atau
-POST, yang merupakan serangkaian tes perangkat keras untuk memastikan
-bahwa semuanya berfungsi dengan baik. POST akan memeriksa RAM, prosesor,
-kartu grafis, dan perangkat keras lainnya. Jika ada masalah dengan
-perangkat keras, komputer akan memberikan pesan kesalahan yang sesuai.
+### 1. Memuat BIOS
 
-3.  Inisialisasi Perangkat Keras
+Saat kita menyalakan power, langkah pertama dalam proses booting adalah memuat BIOS. Power supply menyediakan listrik ke komponen penting, termasuk prosesor dan BIOS.
 
-Setelah POST selesai, komputer akan menginisialisasi perangkat keras
-seperti *hard drive, keyboard, mouse*, dan perangkat lainnya. Proses ini
-melibatkan tahap mengenali perangkat keras, memuat *driver *yang
-diperlukan, dan menyiapkan perangkat untuk digunakan.
+### 2. Power-On Self Test (POST)
 
-4.  Membaca Sektor Boot
+Setelah memuat BIOS, ia melakukan Power on Self-Test (POST). Tes ini memeriksa memori utama komputer, drive disk, perangkat input/output, dan komponen perangkat keras lainnya. Jika kesalahan terdeteksi selama pengujian, sistem akan mengeluarkan bunyi bip atau menampilkan notifikasi di layar untuk mengingatkan pengguna.
 
-Selanjutnya, komputer akan mencari sektor *boot *di *hard drive *atau
-perangkat penyimpanan lainnya. Sektor *boot *adalah area khusus yang
-berisi instruksi awal untuk memuat sistem operasi.
+### 3. Memuat Sistem Operasi
 
-5.  Memuat Sistem Operasi
+Setelah POST berhasil diselesaikan, BIOS membaca urutan bootable yang disimpan dalam CMOS (Common Metal Oxide Semiconductor). Berdasarkan urutan bootable, BIOS mencari Master Boot Record (MBR) pada perangkat yang dapat di-boot seperti floppy disk, CD-ROM, dan hard disk.
 
-Setelah sektor *boot *ditemukan, komputer akan memuat sistem operasi ke
-dalam memori utama (RAM). Kemudian, sistem operasi akan mengambil alih
-kendali dan mulai menjalankan program-program yang diperlukan untuk
-mengoperasikan komputer.
+Jika MBR tidak ditemukan pada perangkat yang dapat di-boot, sistem akan menampilkan pesan yang mengatakan "Tidak Ada Perangkat Booting Ditemukan" dan crash. Namun, jika MBR ditemukan, BIOS meluncurkan boot loader, perangkat lunak aplikasi khusus yang memuat sistem operasi.
+
+### 4. Konfigurasi Sistem 
+
+Setelah sistem operasi dimuat, driver perangkat dimuat ke dalam memori untuk memastikan pengoperasian komponen perangkat keras komputer dengan benar. Driver perangkat ini bertindak sebagai perantara antara sistem operasi dan perangkat keras, memungkinkan keduanya berkomunikasi secara efektif.
+
+### 5. Memuat Utilitas Sistem
+
+Pada langkah ini, proses booting dalam sistem operasi melibatkan pemuatan utilitas sistem ke dalam memori. Utilitas sistem, seperti perangkat lunak antivirus dan kontrol volume, merupakan alat penting yang meningkatkan fungsionalitas dan keamanan sistem operasi.
+
+### 6. Autentikasi Pengguna
+
+Jika ada otentikasi pengguna yang dikonfigurasi, sistem akan meminta pengguna untuk memasukkan kredensial mereka. Setelah sistem menerima kredensial yang valid, sistem biasanya meluncurkan shell antarmuka pengguna grafis (GUI) atau shell antarmuka baris perintah (CLI), yang memberikan akses pengguna ke sumber daya dan aplikasi sistem.
+
+Enam langkah ini memastikan sistem operasi komputer dimuat dengan benar dan siap digunakan. Dengan memahami proses booting, kita mendapatkan wawasan tentang rangkaian kejadian rumit di balik layar saat kita menghidupkan komputer.
+
+### Referensi 
+    - Richard R. Muntz. Juni 1974, Operating Systems. https://ieeexplore.ieee.org/document/6323579
+
+    - James Mickens. 2021, Operating Systems. https://read.seas.harvard.edu/cs161/2021/
+
+    - Vibha Gupta.203 September 6, Booting in Operating  System (OS): Types, Steps and Process.
+      https://www.almabetter.com/bytes/articles/booting-in-operating-system
+
+
 
 Bagaimana cara install Linux Debian di Virtual Box?
 
