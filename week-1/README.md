@@ -17,24 +17,31 @@
   <hr><hr>
 </div>
 
-Daftar Isi
+## Daftar Isi
 
 1.  Pendahuluan.
 
 2.  Soal.
 
-Apa itu Sistem Operasi?
+### Pengertian Sistem Operasi?
 
-Sistem Operasi (OS) adalah perangkat lunak sistem yang bertugas untuk
-melakukan kontrol dan manajemen terhadap perangkat keras dan
-operasi-operasi dasar sistem, termasuk menjalankan perangkat lunak
-aplikasi seperti program-program pengolah kata dan peramban web.
+Sistem operasi adalah salah satu perangkat lunak paling kompleks,  didalamnya terdapat Kernel yang mengabstraksi fitur-fitur yang disediakan oleh perangkat keras komputer.Peran Sistem Operasi menjadikan fitur-fitur tersebut lebih aman dan nyaman untuk digunakan.
 
-Soal
+istilah "sistem operasi" biasanya mengacu pada perangkat lunak yang menyediakan antarmuka antara pengguna dan perangkat keras sistem komputer.Sebagai antarmuka antara pengguna dan perangkat keras, sistem operasi harus dirancang dengan mempertimbangkan kebutuhan pengguna serta kendala dan peluang teknologi.
 
-Sebutkan dan jelaskan proses booting!
+### Soal 
 
-1.  Power On
+#### Sebutkan dan jelaskan proses booting Komputer!
+
+## Apa itu Proses Booting?
+
+Apa itu booting di OS? Di bagian ini, kita akan mendefinisikan booting di sistem operasi. Saat kita menyalakan komputer, perangkat menerima daya dan diinisialisasi. Pada tahap ini, memori utama, atau RAM, kosong. Untuk memulai sistem, sekumpulan kecil instruksi yang disimpan dalam memori read-only (ROM) dikirim ke unit pemrosesan pusat (CPU) untuk dieksekusi. Petunjuk ini membantu memeriksa komponen perangkat keras dan mengidentifikasi potensi masalah. Jika ada masalah perangkat keras, bunyi bip atau notifikasi di layar mengingatkan kita.
+
+Setelah pemeriksaan perangkat keras selesai, proses booting sistem operasi dimulai. Sistem operasi dimuat, memungkinkan komputer berfungsi dengan baik dan menerima perintah pengguna.Proses booting di OS sangat penting untuk pengoperasian komputer yang memadai dan pelaksanaan berbagai aplikasi perangkat lunak.
+
+Untuk langkah langkah dari proses booting sistem operasi bisa di lihat di bawah ini:
+
+1. Power On
 
 Saat tombol power atau tombol *reset *dihidupkan, sumber daya listrik
 akan mengalir ke komputer. Kemudian, perangkat keras akan menerima daya
@@ -70,13 +77,13 @@ mengoperasikan komputer.
 
 Bagaimana cara install Linux Debian di Virtual Box?
 
-1.  Download Virtual Box di <https://bit.ly/49DpHxO>, pilih sesuai
+1.  Download Virtual Box di <https://www.virtualbox.org/wiki/Downloads>, pilih sesuai
     system operasi yang kalian gunakan.
 
 <img src="./media/image2.png"
 style="width:5.48945in;height:2.54825in" />
 
-2.  Download Debian di https://bit.ly/48sH03m
+2.  Download Debian di <https://www.debian.org/download>
 
 <img src="./media/image3.png"
 style="width:5.56877in;height:2.57496in" />
