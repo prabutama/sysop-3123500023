@@ -117,12 +117,6 @@ UEFI menawarkan beberapa keunggulan dibandingkan BIOS tradisional. Karena UEFI l
 BIOS telah menjadi standar selama bertahun-tahun dan masih digunakan secara luas. Ia menawarkan kesederhanaan dan kompatibilitas dengan perangkat keras dan sistem operasi lama. BIOS juga memiliki basis pengguna yang sudah lama ada dan dokumentasi ekstensif yang tersedia, sehingga memudahkan pengguna untuk memecahkan masalah dan menyelesaikan masalah.
 Meskipun UEFI memiliki banyak keunggulan, UEFI mungkin tidak diperlukan untuk semua pengguna, terutama mereka yang memiliki sistem lama. Namun, seiring berkembangnya teknologi, UEFI diperkirakan akan sepenuhnya menggantikan BIOS, artinya PC dengan UEFI akan menjadi antarmuka firmware standar.
 
-
-
-
-
-
-
 ## Jenis Proses Booting
 
 ### 1. Cold Booting
@@ -134,28 +128,41 @@ Warm boot, atau reboot, terjadi saat komputer dihidupkan ulang saat dihidupkan. 
 #### * Untuk langkah langkah dari proses booting sistem operasi bisa di lihat di bawah ini:
 
 ### 1. Memuat BIOS
+<img src="./media/step1.png"
+style="width:5.48945in;height:2.54825in"/>
+<img src="./media/step1.2.png"
+style="width:5.48945in;height:2.54825in"/>
 
 Saat kita menyalakan power, langkah pertama dalam proses booting adalah memuat BIOS. Power supply menyediakan listrik ke komponen penting, termasuk prosesor dan BIOS.
 
 ### 2. Power-On Self Test (POST)
+<img src="./media/step2.png"
+style="width:5.48945in;height:2.54825in"/>
 
 Setelah memuat BIOS, ia melakukan Power on Self-Test (POST). Tes ini memeriksa memori utama komputer, drive disk, perangkat input/output, dan komponen perangkat keras lainnya. Jika kesalahan terdeteksi selama pengujian, sistem akan mengeluarkan bunyi bip atau menampilkan notifikasi di layar untuk mengingatkan pengguna.
 
 ### 3. Memuat Sistem Operasi
+<img src="./media/step3.png"
+style="width:5.48945in;height:2.54825in"/>
 
 Setelah POST berhasil diselesaikan, BIOS membaca urutan bootable yang disimpan dalam CMOS (Common Metal Oxide Semiconductor). Berdasarkan urutan bootable, BIOS mencari Master Boot Record (MBR) pada perangkat yang dapat di-boot seperti floppy disk, CD-ROM, dan hard disk.
-
 Jika MBR tidak ditemukan pada perangkat yang dapat di-boot, sistem akan menampilkan pesan yang mengatakan "Tidak Ada Perangkat Booting Ditemukan" dan crash. Namun, jika MBR ditemukan, BIOS meluncurkan boot loader, perangkat lunak aplikasi khusus yang memuat sistem operasi.
 
 ### 4. Konfigurasi Sistem 
+<img src="./media/step4.png"
+style="width:5.48945in;height:2.54825in"/>
 
 Setelah sistem operasi dimuat, driver perangkat dimuat ke dalam memori untuk memastikan pengoperasian komponen perangkat keras komputer dengan benar. Driver perangkat ini bertindak sebagai perantara antara sistem operasi dan perangkat keras, memungkinkan keduanya berkomunikasi secara efektif.
 
 ### 5. Memuat Utilitas Sistem
+<img src="./media/step5.jpg"
+style="width:5.48945in;height:2.54825in"/>
 
 Pada langkah ini, proses booting dalam sistem operasi melibatkan pemuatan utilitas sistem ke dalam memori. Utilitas sistem, seperti perangkat lunak antivirus dan kontrol volume, merupakan alat penting yang meningkatkan fungsionalitas dan keamanan sistem operasi.
 
 ### 6. Autentikasi Pengguna
+<img src="./media/step6.png"
+style="width:5.48945in;height:2.54825in"/>
 
 Jika ada otentikasi pengguna yang dikonfigurasi, sistem akan meminta pengguna untuk memasukkan kredensial mereka. Setelah sistem menerima kredensial yang valid, sistem biasanya meluncurkan shell antarmuka pengguna grafis (GUI) atau shell antarmuka baris perintah (CLI), yang memberikan akses pengguna ke sumber daya dan aplikasi sistem.
 
