@@ -162,12 +162,16 @@ Jika ada otentikasi pengguna yang dikonfigurasi, sistem akan meminta pengguna un
 Enam langkah ini memastikan sistem operasi komputer dimuat dengan benar dan siap digunakan. Dengan memahami proses booting, kita mendapatkan wawasan tentang rangkaian kejadian rumit di balik layar saat kita menghidupkan komputer.
 
 ### Referensi 
-    - Richard R. Muntz. Juni 1974, Operating Systems. https://ieeexplore.ieee.org/document/6323579
+    - Richard R. Muntz. 1974 June, Operating Systems. https://ieeexplore.ieee.org/document/6323579
 
     - James Mickens. 2021, Operating Systems. https://read.seas.harvard.edu/cs161/2021/
 
-    - Vibha Gupta.203 September 6, Booting in Operating  System (OS): Types, Steps and Process.
+    - Vibha Gupta. 2003 September 6, Booting in Operating  System (OS): Types, Steps and Process.
       https://www.almabetter.com/bytes/articles/booting-in-operating-system
+
+    - Sunbul. 2023 December 7, Computing System. https://www.redswitches.com/blog/uefi-vs-bios/#what-is-bios
+
+    - geeksforgeeks.org. 2023 July 26, What is a Motherboard?. https://www.geeksforgeeks.org/what-is-a-motherboard/
 
 
 
