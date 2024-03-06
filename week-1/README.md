@@ -45,7 +45,7 @@ Menyalakan komputer untuk pertama kalinya atau setelah komputer dimatikan sepenu
 
 ### 2. Warm Booting
 <img src="./media/warm.png"
-style="width:200px; object-fit: cover; padding: 50; background-color: white;"/>
+style="width:200px; object-fit: cover; padding: 50px; background-color: white;"/>
 
 Warm boot, atau reboot, terjadi saat komputer dihidupkan ulang saat dihidupkan. Jenis booting ini biasanya dilakukan ketika sistem hang atau menjadi tidak responsif. Warm booting dapat dimulai melalui perangkat keras, seperti menekan tombol reset, atau perintah perangkat lunak, seperti Ctrl+Alt+Del. Seringkali perlu melakukan boot hangat setelah menginstal perangkat lunak atau perangkat keras baru untuk menerapkan perubahan konfigurasi dan memastikan fungsionalitas sistem yang tepat.
 
