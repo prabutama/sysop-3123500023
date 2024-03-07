@@ -100,9 +100,6 @@ Enam langkah ini memastikan sistem operasi komputer dimuat dengan benar dan siap
     - Vibha Gupta. 2003 September 6, Booting in Operating  System (OS): Types, Steps and Process.
       https://www.almabetter.com/bytes/articles/booting-in-operating-system
 
-    - Sunbul. 2023 December 7, Computing System. https://www.redswitches.com/blog/uefi-vs-bios/#what-is-bios
-
-    - geeksforgeeks.org. 2023 July 26, What is a Motherboard?. https://www.geeksforgeeks.org/what-is-a-motherboard/
 
 ### Bagaimana cara install Linux Debian di Virtual Box?
 

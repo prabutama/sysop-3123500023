@@ -153,3 +153,8 @@ Komputer adalah perangkat elektronik yang memproses data sesuai dengan kebutuhan
 14. Integrated Circuits (IC) : IC juga merupakan komponen yang sangat penting dari motherboard. Sirkuit terpadu digunakan untuk pemrosesan dan penyimpanan data.
 
     ![alt text](media/image-14.png)
+
+### Referensi 
+      - Sunbul. 2023 December 7, Computing System. https://www.redswitches.com/blog/uefi-vs-bios/#what-is-bios
+
+      - geeksforgeeks.org. 2023 July 26, What is a Motherboard?. https://www.geeksforgeeks.org/what-is-a-motherboard/
