@@ -205,58 +205,28 @@ style="width:5.48945in; object-fit: cover;" />
 
 Setelah melakukan beberapa pengujian pada masing masing komputer dengan jumlah thread yang berbeda, kami menyediakan tabel perbandingan pengujian yang tertera di bawah ini.
 
-<html>
-<head>
-  <style>
-      table {
-          width: 100%;
-          border-collapse: collapse;
-      }
-      th, td {
-          border: 1px solid black;
-          padding: 8px;
-          text-align: center;
-      }
-      th {
-         background-color: green;
-          color: white;
-      }
-         
-  </style>
-</head>
-<body>
-  <table>
-    <thead>
-      <tr>
-        <th>Nama</th>
-        <th>Thread</th>
-        <th>Max Iops64</th>
-        <th>Max Flops64</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Danur Isa Prabutana</td>
-        <td>1</td>
-        <td>5.485198</td>
-        <td>7.211455</td>
-      </tr>
-      <tr>
-        <td>Achmad Risel Araby</td>
-         <td>3</td>
-        <td>14.079893</td>
-        <td>15.226595</td>
-      </tr>
-      <tr>
-        <td>Fikri Athanbil Efendy</td>
-         <td>2</td>
-        <td>7.721513</td>
-        <td>8.278674</td>
-      </tr>
-    </tbody>
-  </table>
-</body>
-</html>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+    th {
+        background-color: green;
+        color: white;
+    }
+</style>
+
+| Nama       | Thread       | Max Iops       | Max Flps       |
+|---------------|---------------|---------------|---------------|
+| Danur Isa Prabutana   | 1     | 5.485198  | 7.21145   |
+| Achmad Risel Araby    | 3     | 14.079893 | 15.226595 |
+| Fikri Athanbil Efendy | 2     | 7.721513  | 8.278674  |
+
 
 ## Analisa
 
