@@ -217,6 +217,19 @@ Setelah melakukan beberapa pengujian pada masing masing komputer dengan jumlah t
 
 Dari pengujian yang telah kami lakukan menggunakan komputer dari masing masing anggota kelompok dengan jumlah thread yang berbeda dimana komputer Isa memiliki 1 thread, Achmad memiliki 3 thread, dan Fikri memiliki 2 thread. Hasinya menunjukkan bahwa komputer dengan jumlah thread paling banyak yaitu komputer milik achmad, memiliki Maximum CPU Throughput tertinggi. Jadi semakin banyak thread pada suatu komputer maka perhitungannya akan semakin cepat.
 
+## Proses Instalasi GCC, Make, Git
+### Instalasi GCC
+<img src="./media/gcc.png"
+style="width:5.48945in; object-fit: cover;" />
+
+### Instalasi Make 
+<img src="./media/make.png"
+style="width:5.48945in; object-fit: cover;" />
+
+### Instalasi Git
+<img src="./media/git.png"
+style="width:5.48945in; object-fit: cover;" />
+
 ## Kesimpulan
 
 IOPS : Pengujian dengan iops adalah menguji komputer untuk melakukan perhitungan bilangan integer dengan waktu tertentu
