@@ -205,21 +205,6 @@ style="width:5.48945in; object-fit: cover;" />
 
 Setelah melakukan beberapa pengujian pada masing masing komputer dengan jumlah thread yang berbeda, kami menyediakan tabel perbandingan pengujian yang tertera di bawah ini.
 
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: green;
-        color: white;
-    }
-</style>
 
 | Nama       | Thread       | Max Iops       | Max Flps       |
 |---------------|---------------|---------------|---------------|
