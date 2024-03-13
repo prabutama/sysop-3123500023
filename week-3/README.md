@@ -18,10 +18,10 @@
 </div>
 
 ## Siklus CPU (Fetch, Decode, Execute)
-Siklus CPU adalah proses berulang yang dilakukan CPU untuk menjalankan program.  Proses ini ibarat jantung komputer, terus berdetak dan memungkinkan komputer untuk bekerja.Kami telah membuat slide penjelasan tentang siklus CPU yang bisa diakses pada link di bawah:
- 
-https://intip.in/SIKLUSCPU7
 
+Siklus CPU adalah proses berulang yang dilakukan CPU untuk menjalankan program. Proses ini ibarat jantung komputer, terus berdetak dan memungkinkan komputer untuk bekerja.Kami telah membuat slide penjelasan tentang siklus CPU yang bisa diakses pada link di bawah:
+
+https://intip.in/SIKLUSCPU7
 
 ## Pengujian Kemampuan Komputer Dengan Benchmark
 
@@ -30,6 +30,7 @@ Pada praktikum kali ini kami melakukan tugas pengujian kemampuan komputer melalu
 ## Danur Isa Prabutama
 
 Pada Pengujian kali ini komputer hanya menggunakan 1 thread
+
 ### Pengujian menggunakan perintah iops64 untuk melakukan perhitungan bilangan integer
 
 ### Pengujian 1 :
@@ -85,7 +86,9 @@ style="width:5.48945in; object-fit: cover;" />
 style="width:5.48945in; object-fit: cover;" />
 
 ## Achmad Risel Araby
+
 Pada Pengujian kali ini komputer hanya menggunakan 3 thread
+
 ### Pengujian menggunakan perintah iops64 untuk melakukan perhitungan bilangan integer
 
 ### Pengujian 1 :
@@ -141,7 +144,9 @@ style="width:5.48945in; object-fit: cover;" />
 style="width:5.48945in; object-fit: cover;" />
 
 ## Fikri Athanbil Efendi
+
 Pada Pengujian kali ini komputer hanya menggunakan 2 thread
+
 ### Pengujian menggunakan perintah iops64 untuk melakukan perhitungan bilangan integer
 
 ### Pengujian 1 :
@@ -200,6 +205,7 @@ style="width:5.48945in; object-fit: cover;" />
 
 Setelah melakukan beberapa pengujian pada masing masing komputer dengan jumlah thread yang berbeda, kami menyediakan tabel perbandingan pengujian yang tertera di bawah ini.
 
+<html>
 <style>
     table {
         width: 100%;
@@ -249,11 +255,15 @@ Setelah melakukan beberapa pengujian pada masing masing komputer dengan jumlah t
     </tr>
   </tbody>
 </table>
+</body>
+</html>
 
 ## Analisa
+
 Dari pengujian yang telah kami lakukan menggunakan komputer dari masing masing anggota kelompok dengan jumlah thread yang berbeda dimana komputer Isa memiliki 1 thread, Achmad memiliki 3 thread, dan Fikri memiliki 2 thread. Hasinya menunjukkan bahwa komputer dengan jumlah thread paling banyak yaitu komputer milik achmad, memiliki Maximum CPU Throughput tertinggi. Jadi semakin banyak thread pada suatu komputer maka perhitungannya akan semakin cepat.
 
 ## Kesimpulan
+
 IOPS : Pengujian dengan iops adalah menguji komputer untuk melakukan perhitungan bilangan integer dengan waktu tertentu
 
 FlOPS : Pengujian dengan iops adalah menguji komputer untuk melakukan perhitungan bilangan float dengan waktu tertentu
