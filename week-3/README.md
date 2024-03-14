@@ -221,14 +221,34 @@ Dari pengujian yang telah kami lakukan menggunakan komputer dari masing masing a
 ### Instalasi GCC
 <img src="./media/gcc.png"
 style="width:5.48945in; object-fit: cover;" />
+### Fungsi GCC : 
+Fungsi GNU Compiler Collection (GCC) adalah sebagai  kompilator untuk berbagai bahasa pemrograman. Awalnya, GCC memang  hanya bisa mengkompilasi program berbahasa C, sehingga kepanjangan GCC  adalah GNU C Compiler. Namun, seiring perkembangannya, GCC  sekarang mendukung kompilasi untuk banyak bahasa lain, seperti C++,  Fortran, Java, dan lainnya
 
 ### Instalasi Make 
 <img src="./media/make.png"
 style="width:5.48945in; object-fit: cover;" />
+### Fungsi Make Untuk Kompilasi 
+
+1. Otomatisasi Kompilasi: Anda dapat membuat aturan di dalam file "Makefile" yang menjelaskan bagaimana cara mengompilasi setiap bagian dari proyek Anda. Ini termasuk pengaturan kompilasi, pemrosesan dependensi, dan penanganan berbagai kondisi untuk kompilasi.
+
+2. Manajemen Dependensi: "make" melacak dependensi antara file-file dalam proyek Anda. Ini berarti jika Anda hanya mengubah satu file, "make" akan tahu bagaimana cara membangun ulang file-file lain yang bergantung padanya, sehingga Anda tidak perlu mengompilasi seluruh proyek setiap kali terjadi perubahan kecil.
+
+3. Efisiensi: "make" secara cerdas menentukan file mana yang harus dikompilasi kembali berdasarkan waktu modifikasi dan dependensinya. Ini menghemat waktu dan sumber daya dengan menghindari kompilasi yang tidak perlu.
+
+4. Portabilitas: "make" adalah alat yang sangat portabel dan tersedia di hampir semua distribusi Linux dan juga di berbagai sistem operasi lainnya.
+
+5. Fleksibilitas: Dengan menggunakan aturan yang tepat dalam file "Makefile", Anda dapat mengonfigurasi "make" untuk mengelola berbagai jenis proyek, termasuk proyek-proyek dengan struktur dan kebutuhan kompilasi yang kompleks.
 
 ### Instalasi Git
 <img src="./media/git.png"
 style="width:5.48945in; object-fit: cover;" />
+
+### beberapa fungsi penting Git:
+
+1. Melacak Riwayat Kode (Version Control): Git menyimpan setiap perubahan yang dilakukan pada kode sumber Anda, sehingga Anda dapat melacak bagaimana kode tersebut berevolusi dari waktu ke waktu.
+2. Mengembalikan Perubahan (Reverting Changes): Jika Anda melakukan perubahan yang menyebabkan bug atau masalah lain, Anda dapat dengan mudah kembali ke versi kode sebelumnya yang berfungsi dengan baik.
+3. Kolaborasi: Git memungkinkan banyak programmer untuk bekerja pada proyek yang sama secara bersamaan. Mereka dapat melacak perubahan satu sama lain, menggabungkan kode mereka, dan menyelesaikan konflik yang mungkin timbul.
+4. Backup: Git pada dasarnya adalah sistem backup untuk kode sumber Anda. Anda tidak perlu khawatir kehilangan pekerjaan Anda jika terjadi kesalahan.
 
 ## Kesimpulan
 
