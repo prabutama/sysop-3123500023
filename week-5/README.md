@@ -119,8 +119,16 @@ top, nice, renice.
 
 #### PERCOBAAN:
 1.	Login sebagai user.
+
+    <img src="./media/p1-6.png"
+      style="width:5.48945in; object-fit: cover;" />
+
 2.	Download program   C++   untuk   menampilkan   bilangan   prima   yang   bernama
 primes.
+
+    <img src="./media/p-2.png"
+      style="width:5.48945in; object-fit: cover;" />
+
 3.	Lakukan percobaan-percobaan di bawah ini kemudian analisa hasil percobaan.
 4.	Selesaikan soal-soal latihan.
 
@@ -138,12 +146,16 @@ dan login ke terminal sebagai user.
     <img src="./media/p1-7.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Ps digunakan untuk melihat proses yang ada
+
 8.	Untuk melihat fak tor/elemen lainnya, gunakan option –u (user). %CPU adalah presentasi CPU time yang digunakan oleh proses tersebut, %MEM adalah presentasi system memori yang digunakan proses, SIZE adalah jumlah memori yang digunakan, RSS (Real System Storage) adalah jumlah memori yang digunakan, START adalah kapan proses tersebut diaktifkan
 
     $ ps -u
 
     <img src="./media/p1-8.png"
       style="width:5.48945in; object-fit: cover;" />
+
+     Analisa : Ps -u digunakan untuk menampilkan proses yang berjalan beserta user
 
 9.	Mencari proses yang spesifik pemakai. Proses diatas hanya terbatas pada proses milik pemakai, dimana pemakai teresbut melakukan login
 
@@ -156,6 +168,8 @@ dan login ke terminal sebagai user.
     <img src="./media/p1-9c.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : perintah tersebut digunakan untuk menampilkan proses pada user yang kita inginkan
+
 10.	Mencari proses lainnya gunakan opsi a (all) dan au (all user)
     
     $ ps –a
@@ -163,10 +177,14 @@ dan login ke terminal sebagai user.
     <img src="./media/p1-10a.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Digunakan untuk menampilkan proses pada user sekarang
+
     $ ps –au
 
     <img src="./media/p1-10b.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : Digunakan untuk menampilkan proses semua user
 
 11.	Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
@@ -194,6 +212,8 @@ dan login ke terminal sebagai user.
     <img src="./media/p2-12e.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Perintah diatas sama fungsinya dengan perintah ps pada perintah-perintah yang telah dijalankan sebelumnya yang perbedaanya hanya pada opsi yang ditambahkansetelahnya dimana pada perintah ps digabungkan dengan opsi– eH. Dan Ketika perintah ps – eH ini dieksekusi dengan cara menekan Enter, maka prosesnya akan berjalandengan cara membaca terlebih dahulu perintah ps yang kemudian dilanjutkan denganmembaca opsi e yang berfungsi memilih semua proses dan opsi H yang berfungsimenghasilkan tampilan proses secara hierarki.
+
 13.	Ketik ps –e f dan tekan Enter. Tampilan serupa dengan langkah 2. Opsi
 –f akan menampilkan status proses dengan karakter grafis (\ dan _)
     
@@ -210,6 +230,8 @@ dan login ke terminal sebagai user.
     <img src="./media/p2-13e.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Perintah serupa dengan tampilan dengan pada percobaan yang kedua diatas, yang hanya berbeda pada opsi yang ditambahkan dengan pada percobaan yang kedua diatas yang hanya berbeda pada opsi yang ditambahkan setelahe. diamana pada perintah ini ditambahkan opsi f yang berfungsi untuk mengetahui STAT (keadaan) darisebuah proses itu yang biyasanya ditandai dengan simbol S (sleeping) atau R (Running)
+
 14.	Ketik pstree dan tekan Enter. Akan ditampilkan semua proses pada sistem dalam bentuk hirarki parent/child. Proses parent di sebelah kiri proses child. Sebagai contoh proses init sebagai parent (ancestor) dari semua proses pada sistem. Beberapa child dari init mempunyai child. Proses login mempunya i proses bash sebagai child. Proses bash mempunyai proses child startx. Proses startx mempunyai child xinit dan seterusnya.
     
     $ pstree
@@ -221,12 +243,16 @@ dan login ke terminal sebagai user.
     <img src="./media/p2-14c.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Gambar diatas tampak struktur berupa sebuah pohon atau diagram. Yangmenyatakan system ditampilkan dalam bentuk hirarki parent/child. Proses parent disebelah kiri proses child.Sebagai contoh proses init sebagai parent (ancestor) dari semua proses pada sistem. Beberapa child dari init mempunyai child. Proses login mempunyai proses bash sebagai child. Proses bash mempunyai proses child startx. Proses startxmempunyai child xinit dan seterusnya hingga membentuk seperti pohon
+
 15.	Ketik pstree | grep mingetty dan tekan Enter. Akan menampilkan semua proses mingetty yang berjalan pada system yang berupa console virtual. Selain menampikan semua proses, proses dikelompokkan dalam satu baris dengan suatu angka sebagai jumlah proses yang berjalan.
 
     $ pstree | grep mingetty
 
     <img src="./media/p2-15.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : perintah ini digunakan untuk menampilkan semua proses mingetty yang berjalan pada system yang berupa console virtual. Outputnya kosong karena tidak program mingetty pada OS saya
 
 16.	Untuk melihat semua PID untuk proses gunakan opsi –p.
     
@@ -247,7 +273,10 @@ dan login ke terminal sebagai user.
     <img src="./media/p2-16g.png"
       style="width:5.48945in; object-fit: cover;" />
 
-17.	Untuk menampilk an proses dan ancestor yang tercetak tebal gunakan opsi
+    Analisa :  Proses tampilan dari perintah ini serupa dengan tampilan pada perintah yangdilakukan pada proses praktikum bagian 5 dimana data ditampilkan menyerupai sebuah struktur diagram atau pohon. yang pada proses ini hanya ditambahkan dengan imformasi mengenai PID dari proses yang digunakan dengan menambahkan Opsi– p
+
+
+17.	Untuk menampilkan proses dan ancestor yang tercetak tebal gunakan opsi
 –h.
 
     $ pstree –h
@@ -258,6 +287,8 @@ dan login ke terminal sebagai user.
       style="width:5.48945in; object-fit: cover;" />
     <img src="./media/p2-17c.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : perintah $ pstree yang kemudian ditambahkan opsi – h berfungsi Untuk menampilkan proses dan ancestor dengan cara ditampilkan atau dicetak tebal
 
 #### Percobaan 3 : Menampilkan Status Proses dengan Berbagai Format
 9.	Pindah ke command line terminal (tty2) dengan menekan Ctrl+Alt+F2 dan login ke terminal sebagai user.
@@ -279,6 +310,8 @@ dan login ke terminal sebagai user.
       style="width:5.48945in; object-fit: cover;" />
     <img src="./media/p3-10e.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : menampilkan semua proses dalam bentuk 4 kolom :PID, TTY, TIME dan CMD.Yang kemudian disortir dengan menggunakan More.
     
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -299,6 +332,8 @@ dan login ke terminal sebagai user.
 
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
+    Analisa : Opsi a yang berfungsi menampilkan semua proses yang dihasilkan terminal,setelah itu dilanjutkan dengan membaca Opsi x yang berfungsi untuk menampilkan semua proses yang tidak dihasilkan terminal. Secara logika opsi ax ini sama dengan opsi – e. dimana Terdapat 5 kolom untuk tampilan informasih seperti : PID, TTY, STAT, TIMEdan COMMAND. Yang kemudian ditampilkan dengan cara disortir dengan menggunakanMore
+
 12.	Ketik ps –e f | more dan tekan Enter. Opsi –e f akan menampilkan semua proses dalam format daftar penuh.
     
     $ ps ef | more
@@ -307,6 +342,8 @@ dan login ke terminal sebagai user.
       style="width:5.48945in; object-fit: cover;" />
     <img src="./media/p3-12b.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : Ketika perintah $ ps – e f | more dieksekusi maka Opsi– e f akan menampilkan semua proses dalam format daftar penuh. Yang kemudian disortir dengan menggunakanMore.
 
     Jika halaman penuh terlihat prompt --More-- di bagian bawah screen, tekan q untuk kembali ke prompt perintah.
 
@@ -325,6 +362,8 @@ dan login ke terminal sebagai user.
     <img src="./media/p3-13e.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Ketika perintah ps– eo pid, cmd | more dieksekusi, maka prosesnya akan diawali dengan membaca perintah ps yang kemudian dilanjutkan dengan membaca Opsi – eo pid, cmd yang berfungsi untuk menampilkan semua proses dalam format sesuai definisi user yang terdiri dari kolom PID dan CMD
+
     Jika  halaman  penuh  et rlihat prompt   --More-- di  bagian  bawah  screen, tekan q untuk kembali ke prompt perintah.
 
 14.	Ketik ps –eo pid,ppid,%mem,cmd | more dan tekan Enter. Akan menampilkan kolom PID, PPID dan %MEM.   PPID adalah proses ID dari proses parent. %MEM menampilkan persentasi memory system yang digunakan proses. Jika proses hanya menggunakan sedikit memory system akan dita mpilkan 0.
@@ -341,6 +380,8 @@ dan login ke terminal sebagai user.
       style="width:5.48945in; object-fit: cover;" />
     <img src="./media/p3-14e.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : Ketika perintah ps – eo pid,ppid,%mem,cmd | more ini dieksekusi, maka prosesnya akan diawali dengan membaca perintah ps yang kemudian dilanjutkandengan membaca opsi – eo pid,ppid,%mem,cmd yang berfungsi untuk menampilkankolom PID, PPID dan %MEM. Dimana PPID adalah proses ID dari proses parentsedangkan %MEM menampilkan persentasi memory system yang digunakan proses
 
 15.	Logout dan tekan Alt+F7 untuk kembali ke mode grafis
 
@@ -359,6 +400,8 @@ dan login ke terminal sebagai user.
     <img src="./media/p4-2.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : perintah yes ini digunakan untuk mengirim output y yang tidak pernah berhenti.
+
     Untuk menghentikannya gunakan Ctrl-C.
 
 3.	Belokkan standart output ke /dev/null
@@ -367,6 +410,8 @@ dan login ke terminal sebagai user.
 
     <img src="./media/p4-3.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa :Perintah ini digunakan membelokan standart output dari yes ke /dev/null
 
     Untuk menghentikannya gunakan Ctrl-C.
 
@@ -377,6 +422,8 @@ menambahkan karakter & pada akhir perintah.
 
     <img src="./media/p4-4.png"
       style="width:5.48945in; object-fit: cover;" />
+    
+    Analisa : perintah yes tetap dijalankan tetapi shell lain tetap digunakan untuk hal laindengan meletakkan proses pada background dengan menambah karakter & pada akhir  perintah[1] merupakan job number pid
 
     Angka dalam ”[ ]” merupakan job number diikuti PID.
 5.	Untuk melihat status proses gunakan perintah jobs.
@@ -386,6 +433,8 @@ menambahkan karakter & pada akhir perintah.
     <img src="./media/p4-5a.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : Perintah ini digunakan untuk melihat proses yang telah digunakan
+
     Untuk menghentikan job, gunakan perintah kill diikuti job number atau PID proses.   Untuk identifikasi job number, diikuti prefix dengan karakter ”%”.
     
     $ kill %<nomor job>	contoh : kill %1
@@ -393,12 +442,17 @@ menambahkan karakter & pada akhir perintah.
     <img src="./media/p4-5b.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa : perintah diatas digunakan untuk menghentikan job untuk yes dan jobs untuk melihat proses yang telah diterminasi
+
+
 4. Lihat status job setelah diterminasi
     
     $ jobs
 
     <img src="./media/p4-6.png"
       style="width:5.48945in; object-fit: cover;" />
+
+    Analisa : Perintah ini digunakan untuk melihat proses yang telah digunakan
 
 
 
