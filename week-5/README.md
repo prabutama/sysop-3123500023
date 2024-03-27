@@ -129,6 +129,8 @@ primes.
     <img src="./media/p-2.png"
       style="width:5.48945in; object-fit: cover;" />
 
+    Analisa: Program di atas adalah program yang digunakan untuk menampilkan bilangan prima sampai ke N. Ketika program dijalankan, program akan meminta input N dari user dan akan menampilkan bilangan prima. 
+
 3.	Lakukan percobaan-percobaan di bawah ini kemudian analisa hasil percobaan.
 4.	Selesaikan soal-soal latihan.
 
