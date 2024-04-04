@@ -335,7 +335,7 @@ yes dan tekan Enter.
 	-X	format register i386 </br>
      <img src="./media/l2-f.png" style="width:5.48945in; object-fit: cover;" />
 
-     Aalisa : opsi -x digunakan untuk menampilkan semua proses, bahkan yang tidak terkait dengan terminal pengguna (tidak terkendali).
+     Aalisa : opsi -X digunakan untuk menampilkan semua proses, bahkan yang tidak terkait dengan terminal pengguna (tidak terkendali).
 
 
 
