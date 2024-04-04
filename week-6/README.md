@@ -307,13 +307,13 @@ yes dan tekan Enter.
 
     Analisa : opsi -f digunakan untuk menampilkan output dalam format yang lengkap atau penuh. Ini biasanya mencakup informasi seperti pengguna yang menjalankan proses, PID (Process ID), PID induk (Parent Process ID), waktu mulai proses, dan perintah yang dijalankan. 
 
-	-j	format job </br>
-    <img src="./media/l2-b.png" style="width:5.48945in; object-fit: cover;" />
+	j	format job </br>
+    <img src="./media/l2-b1.png" style="width:5.48945in; object-fit: cover;" />
 
     Analisa : opsi -j digunakan untuk menampilkan informasi tentang job control untuk setiap proses. Job control adalah mekanisme dalam sistem Unix/Linux yang memungkinkan pengguna untuk mengelola dan mengontrol proses yang berjalan di terminal. 
 
 	-j	format job control </br>
-    <img src="./media/l2-b.png" style="width:5.48945in; object-fit: cover;" />
+    <img src="./media/l2-b2.png" style="width:5.48945in; object-fit: cover;" />
 
     Analisa : opsi -j digunakan untuk menampilkan informasi tentang job control untuk setiap proses. Job control adalah mekanisme dalam sistem Unix/Linux yang memungkinkan pengguna untuk mengelola dan mengontrol proses yang berjalan di terminal. 
 
@@ -413,8 +413,17 @@ yes dan tekan Enter.
 
     -----------------------------------------------------------
 
+## Apa bedanya interrupt dengan system call dalam diagram state
+Dalam konteks diagram state, baik interrupt maupun system call adalah mekanisme yang berbeda namun sering berinteraksi dalam sistem komputer.
 
+1. Interrupt (Gangguan): Interrupt adalah sinyal yang dihasilkan oleh perangkat keras atau lunak untuk memaksa CPU beralih dari proses yang sedang berjalan ke penanganan interrupt. Ini bisa terjadi secara spontan atau karena kejadian luar biasa, dan setelah ditangani, CPU kembali ke proses sebelumnya.
 
+2. System Call (Panggilan Sistem): System call adalah cara bagi program pengguna untuk berkomunikasi dengan kernel atau sistem operasi untuk melakukan tugas tertentu yang memerlukan hak akses khusus. Biasanya dipicu oleh instruksi yang dipanggil secara eksplisit oleh program, memicu perubahan mode dari mode pengguna ke mode kernel, dan setelah selesai, kembali ke mode pengguna.
+
+Keduanya mempengaruhi transisi antara mode pengguna dan mode kernel, tetapi cara kerjanya dan tujuannya berbeda.
+
+## Kesimpulan 
+Praktikum ini memahami manajemen proses pada sistem operasi Linux. Selama praktikum, kami memperoleh pemahaman tentang konsep dasar proses, termasuk cara pembuatan, identifikasi, dan struktur hubungan antar proses seperti parent-child. Kami juga belajar berbagai teknik untuk mengelola proses dalam lingkungan Linux, mulai dari menampilkan status proses hingga mengontrol jalannya proses menggunakan perintah-perintah shell. Selain itu, kami mendalami konsep penjadwalan prioritas proses, yang memungkinkan kami untuk mengatur urutan eksekusi proses berdasarkan kebutuhan dan prioritas. Melalui penggunaan shell Linux, kami mempraktikkan secara langsung cara mengelola proses secara efisien, serta mengembangkan keterampilan praktis yang dapat diterapkan dalam penggunaan sehari-hari dari sistem operasi Linux. Keseluruhan, praktikum ini memberikan fondasi yang kuat dalam manajemen proses pada sistem operasi Linux, yang sangat berguna dalam pengembangan keterampilan teknis kami.
 
 
 
