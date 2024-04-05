@@ -216,24 +216,25 @@ Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am the paren
 
 ## Program Perkalian Matriks dengan menggunakan fork()
 #### Kode Program: 
-  #include <stdio.h>
-  #include <stdlib.h>
-  #include <unistd.h>
-  #include <sys/wait.h>
 
-  #define ROWS 4
-  #define COLS 4
+    #include <stdio.h>
+    #include <stdlib.h>
+    #include <unistd.h>
+    #include <sys/wait.h>
 
-  void printMatrix(int matrix[ROWS][COLS]) {
-      for (int i = 0; i < ROWS; i++) {
-          for (int j = 0; j < COLS; j++) {
-              printf("%d ", matrix[i][j]);
-          }
-          printf("\n");
-      }
-  }
+    #define ROWS 4
+    #define COLS 4
 
-  int main() {
+    void printMatrix(int matrix[ROWS][COLS]) {
+        for (int i = 0; i < ROWS; i++) {
+            for (int j = 0; j < COLS; j++) {
+                printf("%d ", matrix[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    int main() {
       int matrix[ROWS][COLS];
       int skalar = 2;
 
