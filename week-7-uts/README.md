@@ -216,58 +216,62 @@ Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am the paren
 
 ## Program Perkalian Matriks dengan menggunakan fork()
 #### Kode Program: 
-
     #include <stdio.h>
     #include <stdlib.h>
     #include <unistd.h>
+    #include <sys/types.h>
     #include <sys/wait.h>
 
-    #define ROWS 4
-    #define COLS 4
+    #define MATRIX_SIZE 4
 
-    void printMatrix(int matrix[ROWS][COLS]) {
-        for (int i = 0; i < ROWS; i++) {
-            for (int j = 0; j < COLS; j++) {
-                printf("%d ", matrix[i][j]);
-            }
-            printf("\n");
+    void cetakMatrix(int matrix[MATRIX_SIZE][MATRIX_SIZE]) {
+      for (int i = 0; i < MATRIX_SIZE; i++) {
+        for (int j = 0; j < MATRIX_SIZE; j++) {
+          printf("%d ", matrix[i][j]);
         }
+        printf("\n");
+      }
     }
 
     int main() {
-      int matrix[ROWS][COLS];
-      int skalar = 2;
+      int matrix1[MATRIX_SIZE][MATRIX_SIZE] = {{2, -1, 1, 3},{4, 0, 2, 5},{-2, 1, 4, -1},{1, 3, -2, 0}};
+      int matrix2[MATRIX_SIZE][MATRIX_SIZE] = {{1,2,4,7}, {3,1,-2,5}, {5,0,1,9},{2,4,-3,1}};
+      int result[MATRIX_SIZE][MATRIX_SIZE] = {0};
 
-      for (int i = 0; i < ROWS; i++) {
-          for (int j = 0; j < COLS; j++) {
-              matrix[i][j] = i * j;
+      int i, j, k;
+      int status;
+      pid_t pid;
+
+      printf("Matrix Pertama:\n");
+      cetakMatrix(matrix1);
+      printf("Matrix Kedua:\n");
+      cetakMatrix(matrix2);
+
+      for (i = 0; i < MATRIX_SIZE; i++) {
+        for (j = 0; j < MATRIX_SIZE; j++) {
+          pid = fork();
+          if (pid == 0) { // Child Process
+            int sum = 0;
+            for (k = 0; k < MATRIX_SIZE; k++) {
+              sum += matrix1[i][k] * matrix2[k][j];
+            }
+            exit(sum);
+          } else if (pid > 0) { // Parent Process
+            waitpid(pid, &status, 0);
+            result[i][j] += WEXITSTATUS(status); // Menambahkan hasil perkalian yang telah dihitung Child Process
+          } else {
+            printf("Fork() Gagal!\n");
+            exit(1);
           }
+        }
       }
 
-      printf("Matriks Awal:\n");
-      printMatrix(matrix);
+      printf("\nHasil Perkalian Matrix:\n");
+      cetakMatrix(result);
 
-      pid_t pid = fork();
-
-      if (pid == 0) {
-          printf("\nProses Anak - Matriks Hasil:\n");
-          for (int i = 0; i < ROWS; i++) {
-              for (int j = 0; j < COLS; j++) {
-                  matrix[i][j] *= skalar;
-                  printf("%d ", matrix[i][j]);
-              }
-              printf("\n");
-          }
-      } else if (pid > 0) {
-          wait(NULL);
-          printf("\nProses Induk Selesai.\n");
-      } else {
-          fprintf(stderr, "Fork gagal.\n");
-          return 1;
-      }
       return 0;
     }
 #### Output:
-![alt text](media/matrix.o.png)
+![alt text](media/matrix.png)
 #### Analisa:
-Program tersebut adalah program untuk menghitung perkalian matrix ordo 4x4, dengan meminta user untuk menginputkan nilai dari masing-masing matrix yang akan dikalikan, kemudian menggunakan fungsi fork() untuk menghitung setiap baris, dan waitpid() untuk menunggu proses fork() selesai, jika sudah selesai maka hasil perkalian akan dicetak. Proses fork() dan waitpid() ini mirip sekali dengan proses async-await dalam bahasa-bahasa tingkat tinggi seperti Java dan Python. 
+Program tersebut adalah program untuk menghitung perkalian matrix ordo 4x4, menggunakan fungsi fork() berperan sebagai child proses untuk menghitung setiap baris, waitpid() berperan sebagai parent proses untuk menunggu proses fork() selesai, dan WEXITSTATUS untuk menambahkan hasil perhitungan dari child proses ke dalam matrix result, ini penting karena hasil yang dihitung oleh child proses tidak bisa langsung ditambahkan kedalam result melainkan hanya disimpan didalam tiruannya saja. Jika sudah selesai maka hasil perkalian akan dicetak. Proses fork() dan waitpid() ini mirip dengan proses async-await dalam bahasa-bahasa tingkat tinggi seperti Java dan Python.
