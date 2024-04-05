@@ -1,3 +1,16 @@
+<div align="center">
+  <h2 style="text-align: center;font-weight: bold">LAPORAN PRAKTIKUM 7 SISTEM OPERASI</br></h2>
+  <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
+</div>
+<br />
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/id/4/44/Logo_PENS.png" alt="Logo PENS">
+  <h3 style="text-align: center;">Disusun Oleh : <br>Danur Isa Prabutama</h3>
+
+<h3 style="text-align: center;line-height: 1.5">Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
+  <hr><hr>
+</div>
+
 # Minggu ke 7  
 ## Fork : Parent - Child Process
 Panggilan sistem Fork digunakan untuk membuat proses baru di Linux, dan sistem Unix, yang disebut proses anak , yang berjalan bersamaan dengan proses yang membuat panggilan fork() (proses induk). Setelah proses anak baru dibuat, kedua proses akan menjalankan instruksi berikutnya setelah panggilan sistem fork().</br>pc yang sama (penghitung program), register CPU yang sama, dan file terbuka yang sama yang digunakan dalam proses induk. Tidak memerlukan parameter dan mengembalikan nilai integer.
