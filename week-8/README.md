@@ -116,6 +116,7 @@ Output:
     - Komentar dimulai dengan titik dua (:) diikuti dengan '.
     - Ini diikuti oleh beberapa baris komentar.
     - Komentar diakhiri dengan '. Berikut sintaksnya:
+
      ![alt text](media/comments/3.png)
 
      Contoh: 
@@ -389,6 +390,7 @@ Program di atas menunjukkan penggunaan pengkondisian di pemorograman bash menggu
 
 ## Loops
 Contoh ini mengulangi daftar dan mencetak ke konsol.
+
 ![alt text](media/loops/1.png) 
 
 Output: 
@@ -397,6 +399,7 @@ Output:
 
 ### untuk loop indeks
 untuk loop indeks mirip dengan bahasa C untuk loop indeks. Ini mengeksekusi kode beberapa kali berdasarkan kondisi benar, Ini dimulai dengan nilai awal dan iterasi berisi nilai yang akan bertambah 1.
+
 ![alt text](media/loops/2.png) 
 
 Output
@@ -423,6 +426,7 @@ jika kondisi salah, loop keluar.
 ### Until loops di bash
 Kata untilkunci di Bash digunakan untuk mengeksekusi kode berulang kali hingga kondisi tertentu menjadi true, di mana loop keluar.
 `until` digunakan di Bash dan diakhiri dengan `done`.
+
 ![alt text](media/loops/4.png)
 
 Output:
@@ -528,6 +532,7 @@ Contoh penggunaan fungsi dengan menggunakan parameter
 Output: 
 
 ![alt text](media/functions/1-out.png)
+
 ## Operators
 
 ### Operator Aritmatika Bash
@@ -545,6 +550,7 @@ misalnya, p adalah 20
 ![alt text](image-1.png)
 
 ### Operator Bitwise
+
 ![alt text](image-2.png)
 
 Contoh penggunaan operator di bash
@@ -565,6 +571,7 @@ Output:
 ## Number Comparations
 
 Program ini mengambil nilai masukan dan memeriksa apakah dua nilai sama atau tidak.
+
 ![alt text](media/number-comparations/1.png) 
 
 Berikut ini adalah operator Perbandingan.
@@ -583,9 +590,11 @@ Berikut ini adalah operator Perbandingan.
    - Bandingkan Periksa apakah variabel pertama lebih besar dari sama dengan variabel kedua
 
 menggunakan operator -eq dalam if fipernyataan kondisional
+
 ![alt text](media/number-comparations/2.png) 
 
 Anda juga dapat melakukannya dengan operator ternary.
+
 ![alt text](media/number-comparations/3.png)
 
 ## Check Directory
@@ -782,6 +791,7 @@ Ada beberapa cara kita dapat menulis sintaksis sebagai pengganti sintaksis opera
 
 Cara pertama, gunakan if-else dengan sintaks ekspresi.
 Contoh: 
+
 ![alt text](media/ternary-operator/1.png) 
 
 Output: 
