@@ -527,6 +527,7 @@ Output:
 
 ## Functions
 Contoh penggunaan fungsi dengan menggunakan parameter
+
 ![alt text](media/functions/1.png) 
 
 Output: 
@@ -646,6 +647,7 @@ Output:
 
 Periksa file atau direktori yang ada
 Terkadang, kami ingin memeriksa apakah file atau direktori tersebut ada. Opsi -e memeriksa file atau direktori untuk jalur yang diberikan ada atau tidak.`
+
 ![alt text](media/check-directory/5.png)
 
 Output: 
