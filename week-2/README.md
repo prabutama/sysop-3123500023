@@ -154,6 +154,12 @@ Komputer adalah perangkat elektronik yang memproses data sesuai dengan kebutuhan
 
     ![alt text](media/image-14.png)
 
+### Flowchart Legacy & UEFI
+
+<img src="media/flowchart.png" style="background-color: #ffffff; padding: 25">
+
+
+
 ### Referensi 
       - Sunbul. 2023 December 7, Computing System. https://www.redswitches.com/blog/uefi-vs-bios/#what-is-bios
 
