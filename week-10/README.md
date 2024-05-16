@@ -274,8 +274,6 @@ Aktivasi penjadwal menyediakan upcalls - mekanisme komunikasi dari kernel ke upc
 
 Komunikasi ini memungkinkan aplikasi untuk mempertahankan jumlah thread kernel yang benar
 
-App Screenshot
-
 References
 https://www.geeksforgeeks.org/threading-issues/
 https://en.wikipedia.org/wiki/Thread-local_storage
