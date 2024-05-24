@@ -44,7 +44,7 @@ ___
 ![alt text](image/sjf-hasil.png)
 
 #### Flowchart dari Shorted Job Algorithm
-![alt text](image/SJF-Flowchart.jpg)
+![alt text](image/sjf.drawio.png)
 
 #### Analisa
 Shorted Job First(SJF) adalah algoritma penjadwalan yang efektif untuk meminimalkan waktu tunggu rata-rata dan meningkatkan kinerja sistem, terutama ketika terdapat proses dengan burst time yang tidak merata. Namun, SJF memerlukan prediksi burst time yang akurat dan memiliki overhead yang lebih tinggi dibandingkan algoritma lain.  Jika ada kondisi dimana suatu proses memiliki burst time yang sama, maka yang didahulukan adalah proses yang arrival timenya lebih kecil (yang datang lebih dulu). Algoritma ini cocok untuk situasi di mana waktu tunggu rata-rata dan responsivitas sistem menjadi prioritas utama, dan prioritas proses tidak menjadi pertimbangan utama. 
